@@ -1,0 +1,111 @@
+.companycontainer {
+    background-color: #FFFEF9;
+    border: 1px solid #FFD740;
+    width: 90%;
+    border-radius: 30px;
+    padding: 36px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.serviceArea {
+    background-color: #FFFEF9;
+    border: 1px solid #FFD740;
+    width: 90%;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 12px 24px 12px 24px;
+
+
+}
+
+.location {
+    background-color: #FFFEF9;
+    border: 1px solid #FFD740;
+    width: 90%;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 12px 24px 12px 24px;
+
+}
+
+.teamcard {
+    background-color: #FFFEF9;
+    border: 1px solid #FFD740;
+    width: 380px;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 48px;
+    object-fit: cover;
+
+    
+}
+
+.cardtitle {
+    position: absolute;
+    left: 120px;
+    top: -20px;
+    background-color: #FFF6B4 ;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 12px 24px 12px 24px ;
+
+    
+}
+
+.cardimg {
+    width: 100%;
+}
+
+.cardp {
+    padding: 12px 24px;
+}
+
+.companyh3 {
+    font-size: 28px;
+    color:#EAAC00;
+
+}
+
+.companyp {
+    font-size: 20px;
+    color: #3F3350;
+
+}
+
+.aboutuscarditem {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.servicecontent, .map {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicecontent p {
+    padding: 24px;
+}
+
+
+/* Rwd */
+
+@media (max-width: 768px) {
+    .map {
+      flex-direction: column;
+      align-items: center;
+    }
+    .socialmedia {
+        margin-top: 24px;
+    }
+
+  }
+

@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.process-top {
+  text-align: center;
+}
+
+.service-process {
+  padding: 1rem;
+  min-height: 70vh;
+}
+
+.title {
+  font-size: 28px;
+  color: #ffc107;
+  margin: 3rem 0 0 0;
+}
+
+.process {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0;
+}
+
+.process-list {
+  text-align: center;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.steps {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  font-size: 48px;
+  color: #ffc107;
+  margin: 0 1.8rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  text-align: center;
+  align-items: center;
+}
+
+.step h5 {
+  font-size: 24px;
+  color: #000b41;
+}
+
+.step p {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+}
+
+.process-img {
+  text-align: center;
+  justify-content: center;
+  flex: 1 1;
+}
+
+.process-img img {
+  width: 48%;
+  min-width: 300px;
+  border-radius: 15px;
+}
+/* RWD */
+@media screen and (max-width: 770px) {
+  .process-img {
+    display: none;
+  }
+}
+
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+.dr {
+  background-color: rgba(255, 222, 138, 1);
+  height: 120px;
+  width: 90%;
+  margin: 0px auto;
+  border-radius: 25px;
+  padding-left: 220px;
+}
+
+.dr b {
+  font-size: 32px;
+  color: white;
+  line-height: 70px;
+}
+
+.dr p {
+  color: white;
+}
+
+.dr h1 {
+  line-height: 50px;
+  color: white;
+  margin: 30px;
+}
+
+.reserve {
+  color: rgba(147, 126, 93, 1);
+  text-align: center;
+  width: 90%;
+  height: 320px;
+  margin: 0px auto;
+  padding: 80px;
+}
+
+.reserve p {
+  font-weight: bold;
+  font-size: 28px;
+  padding: 20px;
+}
+
+.inp {
+  background-color: rgba(253, 193, 3, 1);
+  color: rgba(147, 126, 93, 1);
+  border: 0px;
+  cursor: pointer;
+  width: 190px;
+  height: 47px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.footer-team {
+  background-color: rgba(254, 230, 156, 1);
+  width: 90%;
+  height: 210px;
+  margin: 0 auto;
+  border-radius: 25px;
+  position: relative;
+  top: 135px;
+  margin-bottom: 200px;
+}
+
+.footer-icon {
+  list-style-type: none;
+}
+
+.footer-icon li {
+  display: inline-block;
+  position: relative;
+  right: 20px;
+  bottom: -10px;
+  padding: 3px;
+}
+
+.footer-img {
+  position: relative;
+  left: 25px;
+  top: 25px;
+}
+
+.footer-a {
+  color: black;
+  text-decoration: none;
+}
+
+.item ul {
+  list-style: none;
+  float: left;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  left: 350px;
+  bottom: 120px;
+  font-size: 15px;
+  padding-left: 140px;
+}
+
+.Topic-team {
+  position: relative;
+  top: 100px;
+}
+
+.colo {
+  color: rgba(155, 119, 0, 1);
+}
+
+/*RWD */
+@media (max-width: 996px) {
+  .footer-team {
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer-icon li {
+    display: inline-block;
+    position: static;
+    margin: 40px auto;
+    padding-right: 30px;
+  }
+
+  .footer-img {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .item ul {
+    list-style: none;
+    display: block;
+    float: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .colo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .team {
+    top: 0;
+  }
+}
+
+/*RWD */
+@media (max-width: 768px) {
+  .footer-team {
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer-img {
+    left: 0;
+    text-align: center;
+  }
+
+  .footer-icon li {
+    display: inline-block;
+    margin: 40px auto;
+    padding: 10px 10px;
+  }
+
+  .item ul {
+    float: none;
+    text-align: center;
+    position: static;
+    margin: 10 auto;
+    padding: 0;
+  }
+
+  .team {
+    top: 0;
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1350px) {
+  .item ul {
+    position: relative;
+    left: 350px;
+    bottom: 190px;
+    padding: 70px;
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1250px) {
+  .item ul {
+    position: relative;
+    left: 265px;
+    bottom: 170px;
+    padding: 45px;
+  }
+}

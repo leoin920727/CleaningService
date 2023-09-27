@@ -1,0 +1,83 @@
+.staffInfo-card {
+  display: flex;
+  width: auto;
+  padding: 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  border-radius: 30px;
+  border: 1px solid #ffc107;
+  background: rgba(255, 248, 225, 0.3);
+  position: relative;
+  margin: 10px;
+}
+.staffInfo-card > .staffCovid {
+  display: flex;
+  width: 100px;
+  height: 39px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px 20px 20px 0px;
+  background: #fc806f;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+.staffInfo-card > .staffCovid > span {
+  color: #fff;
+}
+.staffInfo-card > .staffImg {
+  width: 120px;
+  height: 120px;
+  clip-path: circle(50% at 50% 50%);
+  object-fit: contain;
+}
+.staffInfo-card > .staffImg > img {
+  width: 100%;
+  height: auto;
+}
+.staffInfo-card .staffText,
+.staffText > span {
+  color: #664d03;
+  /* font-family: Inter; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+.staffText > span,
+.staffAbility > span {
+  font-style: italic;
+}
+/* .staffInfo-card > img {
+  clip-path: inset(0 50% 0 0);
+} */
+.staffInfo-card > .staffAbility {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  align-self: center;
+}
+.staffAbility span,
+.staffCovid > span {
+  color: #664d03;
+  /* font-family: Inter; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.staffAbility > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+.staffAbility > div > img {
+  width: 24px;
+  height: 24px;
+}
+.staffInfo-title {
+  position: relative;
+  bottom: 100px;
+}

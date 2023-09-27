@@ -1,0 +1,29 @@
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+  background-color: rgba(255, 242, 168, 0.527);
+  margin-top: 40px;
+  margin-bottom: -70px;
+}
+
+.marquee-content {
+  position: absolute;
+  bottom: -35px;
+  white-space: nowrap;
+  animation: marquee 90s linear infinite;
+  width: max-content; 
+  animation-timing-function: linear; 
+}
+
+
+
+@keyframes marquee {
+  100% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

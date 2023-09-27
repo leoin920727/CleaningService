@@ -1,0 +1,110 @@
+.Accepting {
+    height: 1000px auto;
+    border: 1px solid #FFD740;
+    border-radius: 30px;
+    background-color: #FFFEF9;
+    position: relative;
+    top: 85px;
+    margin-bottom: 45px;
+}
+
+.Accepting-title {
+    color: #EAAC00;
+    font-size: 32px;
+    margin-left: 30px;
+    margin-top: 40px;
+
+}
+
+.Accepting p {
+    color: #664D03;
+    font-size: 25px;
+    padding: 38px;
+
+}
+
+.Accepting-fee p {
+    padding-left: 50px;
+    color: #664D03;
+}
+
+.Accepting-fee {
+    margin-top: 40px;
+}
+
+.Accepting-form ul {
+    color: #664D03;
+    text-align: center;
+    position: relative;
+    left: 150px;
+    display:inline-block;
+    margin-top: 20px;
+    
+}
+
+.Accepting-form p{
+color: #664D03;
+position: relative;
+bottom: 80px;
+
+
+}
+
+@media (max-width: 1200px) {
+    .Accepting-form p{
+        position: static;
+        display: none;
+        
+    }
+    .Accepting-form ul{
+        position: static;
+        margin: 30px;
+     
+    }
+
+
+}
+.Accepting-i{
+height: 280px;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.Acceptingimage{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: animate 32s linear infinite;  
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100%{
+        transform: perspective(1000px) rotateY(220deg);
+    }
+}
+.Acceptingimage span{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 36deg)) translateZ(390px); 
+-webkit-bow-reflect: below 0px linear-gradient(transform,transparent,#0004)
+}
+
+.Acceptingimage span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 2s;
+}

@@ -1,0 +1,134 @@
+.question {
+  width: 80vw;
+  margin: auto;
+  height: 100px;
+  background-image: url(/public/images/question-001.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  line-height: 100px;
+  color: #664d03;
+  font-size: 30px;
+  border-radius: 25px 25px 0px 0px;
+  position: relative;
+  top: 35px;
+}
+
+.question-line {
+  padding: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+  height: 300px;
+  border: 2px solid #ffc107;
+  border-radius: 25px;
+}
+.question-line p {
+  color: #664d03;
+  font-size: 21px;
+  font-weight: bold;
+}
+.question-icon {
+  list-style-type: none;
+  display: flex;
+}
+.question-icon img {
+  padding-left: 10px;
+  width: 55px;
+}
+.Raccoon {
+  width: 477px;
+  height: 393px;
+  margin-left: 3rem;
+}
+
+.question-row {
+  margin: 120px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.question-card {
+  position: relative;
+  max-width: 270px;
+  max-height: 300px;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  background: #fff;
+  transition: 0.2s;
+  margin-left: auto;
+  margin-bottom: 45px;
+  margin-right: auto;
+}
+
+.question-card:hover {
+  transform: perspective(2000px);
+  /* box-shadow: inset 10px 0 20px rgba(0, 0, 0, 0.5); */
+  background-color: rgba(255, 252, 230, 0.9);
+}
+
+.question-card .question-imgBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #000; */
+  transform-origin: left;
+  z-index: 1;
+  transition: 0.2s;
+  background: #fff;
+}
+
+.question-card:hover .question-imgBox {
+  transform: rotateY(-90deg);
+}
+
+.question-card .question-contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  font-size: 22px;
+  color: #664d03;
+}
+
+/* RWD */
+@media (max-width: 1415px) {
+  .Raccoon {
+    max-width: 450px;
+    max-height: 350px;
+  }
+  .question-line {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1070px) {
+  .Raccoon {
+    max-width: 400px;
+    max-height: 300px;
+    margin: 0;
+  }
+}
+@media (max-width: 950px) {
+  .Raccoon {
+    display: none;
+  }
+  .lines {
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 620px) {
+  .line-img {
+    width: 100px;
+  }
+  .question-line {
+    width: 95vw;
+    padding: 0.8rem;
+  }
+  .question-icon img {
+    width: 45px;
+  }
+}

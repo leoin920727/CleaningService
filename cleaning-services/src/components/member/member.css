@@ -1,0 +1,269 @@
+/* AdminOrder.css -----------------------------------------------------------------*/
+.position {
+  display: inline-flex;
+  padding: 16px 17px;
+  align-items: flex-start;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: clamp(100%, 808px, auto);
+  border: 1px solid #ffc107;
+  border-radius: 50px;
+  align-items: center;
+  padding: 50px;
+  background-image: url("/public/images/dashboard-background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 100%;
+  position: relative;
+}
+
+/* .dashOrder>h3 {
+    color: #eaac00;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 38px;
+    margin-bottom: 65px;
+}
+
+.orderTable {
+    display: flex;
+    flex-direction: column;
+    width: 861px;
+    height: auto;
+    top: 133px;
+    left: 115px;
+    padding: 0px 24px 0px 24px;
+    gap: 12px;
+}
+
+.orderThead,
+.orderTbody {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderThead {
+    border-bottom: 1px solid #664d03;
+}
+
+.orderTbody:hover {
+    background-color: #fff8e1;
+}
+
+.orderTbody {
+    cursor: pointer;
+    display: flex;
+    padding: 12px 12px;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.orderTbody span:nth-child(1) {
+    text-align: left;
+}
+
+.orderTbody span:nth-child(2) {
+    text-align: center;
+}
+
+.orderTbody span:nth-child(3) {
+    text-align: right;
+}
+
+.dashOrder span,
+.orderThead {
+    color: #664d03;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.orderBtn {
+    border: none;
+    width: 94px;
+    height: 42px;
+    border-radius: 10px;
+    background: #997404;
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+    margin: 15px;
+}
+
+.orderBtns {
+    position: absolute;
+    bottom: 20px;
+} */
+
+.orderh3 {
+  padding: 25px 55px 30px 36px;
+  align-items: center;
+  color: #eaac00;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.orderContainer {
+  width: 100%;
+  background-color: #fff8e1;
+  border-radius: 30px;
+  display: flex;
+  padding: 60px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.orderContent {
+  width: 100%;
+  color: #664d03;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  line-height: 1.5;
+  gap: 10px;
+}
+
+.orderContainer table tr td {
+  border: 1px solid #664d03;
+}
+
+.orderContainer table {
+  width: 100%;
+  color: #664d03;
+}
+
+.orderContainer table td {
+  width: 50%;
+}
+
+.notBorder {
+  border: none;
+}
+
+.staffOrderList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 65%;
+  border: 1px solid #ffc107;
+  border-radius: 50px;
+  padding: 2rem;
+  background-color: #fffef9;
+  background-position-y: 100%;
+  position: absolute;
+  top: 25%;
+}
+
+.orderContent li:nth-of-type(even) {
+  border-bottom: 3px solid #997404;
+  line-height: 1;
+}
+
+.orderContent li:nth-of-type(odd) {
+  font-weight: 700;
+}
+
+.btncontain {
+  padding-top: 20px;
+}
+
+.btncontain > .notClear {
+  background: rgba(130, 100, 56, 0.46);
+}
+
+.btncontain > button {
+  color: white;
+  width: 94px;
+  height: 42px;
+  /* justify-content: center; */
+  /* align-items: start; */
+  border-radius: 10px;
+  background: #997404;
+  margin-inline: 15px;
+}
+
+/* Memberinfo.css && PersonalInfo.css------------------------------------------------------*/
+.orderContentMem {
+  display: flex;
+  font-weight: 600;
+  color: #664d03;
+  line-height: 50px;
+}
+
+.tablecontainer {
+  width: 902px;
+  height: 320px;
+  top: 133px;
+  left: 94.5px;
+  padding: 0px 24px 0px 24px;
+
+  color: #664d03;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.memberth {
+  border-bottom: 3px solid #664d03;
+}
+
+.memtbody {
+  text-align: center;
+}
+
+.memtbody > tr:nth-child(1) {
+  border: 1px solid #fff8e1;
+  background: #fff8e1;
+  border-radius: 30px;
+}
+
+.orderImages {
+  z-index: 1400;
+  width: 100px;
+}
+
+@media screen and (max-width: 997px) {
+  .orderContent {
+    flex-direction: column;
+  }
+  .orderContent > .col:nth-child(1) {
+    text-align: center;
+  }
+}
+
+.bgdone {
+  position: relative;
+}
+
+.bgdone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/images/bgdone.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right bottom;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bgdone.complete::before {
+  opacity: 1;
+}

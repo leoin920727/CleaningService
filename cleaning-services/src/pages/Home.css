@@ -1,0 +1,34 @@
+
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFEF9;
+  }
+  
+  .content {
+    opacity: 1; 
+  }
+  
+  .loading .content {
+    opacity: 0;
+  }
+
+  .loading-gif{
+    width: 400px;
+  }
+  
+
+
+ 
+
+  
+  

@@ -1,0 +1,481 @@
+/* ##################################Sidebar-style */
+.aside {
+  min-height: 800px;
+  border-radius: 50px;
+  border: 1px solid #ffc107;
+  background: #fffef9;
+  padding: 4em;
+}
+
+.aside .aside-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.aside-main div {
+  display: flex;
+  padding: 12px 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border-bottom: 1px solid #ffc107;
+}
+
+.aside-img-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.aside-input {
+  border: none;
+  border-bottom: 1px solid #ffc107;
+  background-color: rgba(255, 254, 249, 0);
+  background-color: #fffef9;
+  width: 25%;
+  height: 48px;
+  padding-left: 45px;
+}
+
+.aside-input::placeholder,
+.aside-title {
+  color: #664d03;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.aside span {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #664d0300;
+}
+
+.aside span::before {
+  content: "";
+  display: inline-block;
+  border-radius: 28px;
+  width: 16px;
+  height: 16px;
+  background-image: url("/public/images/chevron-right.png");
+}
+
+.aside span:hover {
+  background-color: #997404;
+  border-radius: 25px;
+  color: #fff8e1;
+  cursor: pointer;
+}
+
+.aside span:active {
+  border: 1px solid #997404;
+  background-color: #997404;
+  border-radius: 25px;
+  color: #fff8e1;
+  cursor: pointer;
+}
+
+.Link-decoration {
+  color: #664d03;
+  text-decoration: none;
+}
+
+/* #################################member-style */
+.aside-main > h3 {
+  color: #eaac00;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aside-main .member {
+  align-items: center;
+}
+
+.aside-title-member {
+  border-left: 2px solid #ffc107;
+  padding-left: 15px;
+}
+
+/* #################################Order-style*/
+.dashOrder {
+  display: flex;
+  flex-direction: column;
+  min-height: 800px;
+  gap: 18px;
+  border-radius: 50px;
+  border: 1px solid #ffc107;
+  background: #fffef9;
+  background-image: url("/public/images/dashboard-background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 100%;
+  position: relative;
+  padding: 38px;
+}
+
+.dashOrder h3 {
+  color: #eaac00;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-left: auto;
+}
+
+.orderThead {
+  border-bottom: 1px solid #664d03;
+  position: relative;
+}
+
+.orderTbody tr td:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.orderTbody tr td:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.orderTbody tr:hover {
+  background-color: #fff8e1;
+}
+
+.orderTbody tr td {
+  cursor: pointer;
+  line-height: 2;
+  white-space: nowrap;
+  /* 禁止文字自動換行 */
+  overflow: hidden;
+  /* 隱藏超出部分 */
+  text-overflow: ellipsis;
+  /* 使用省略號表示被隱藏的內容 */
+  width: calc(100% / 7);
+}
+
+.orderThead,
+.orderTbody {
+  width: 100%;
+  color: #664d03;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.orderBtn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Inter;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #997404;
+  border: none;
+  box-shadow: 0 4px #999;
+  margin: 10px;
+}
+
+.orderBtn:hover {
+  background-color: #664d03;
+}
+
+.orderBtn:active {
+  background-color: #664d03;
+  box-shadow: 0 3px #666;
+  transform: translateY(2px);
+}
+
+.orderBtn-group {
+  display: flex;
+  justify-content: center;
+}
+
+#orderTh_RWD {
+  display: none;
+}
+
+#orderTh {
+  display: contents;
+}
+
+.sideBarBtnToggle {
+  border: 1px solid #997404;
+  background-color: #997404;
+  border-radius: 25px;
+  color: #fff8e1;
+  cursor: pointer;
+}
+
+.staff-accordion {
+  border: 1px solid #997404;
+  color: #664d03;
+  background-color: #fff8e1;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0.3rem;
+  margin-top: 5px;
+  /* position: relative; */
+  cursor: pointer;
+  line-height: 2;
+}
+
+.staff-header {
+  font-weight: 700;
+}
+
+.staff-accordion.active {
+  background-color: #997404;
+  color: #fff8e1;
+}
+
+.staff-content {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5px;
+  color: #664d03;
+  border: 1px solid #997404;
+  border-radius: 10px;
+  background-color: #fff8e1;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+.staff-listBtn {
+  font-weight: bolder;
+  position: absolute;
+  border-radius: 100px;
+  right: 5%;
+  top: 5%;
+}
+
+.ControllAccordion::-webkit-scrollbar {
+  display: none;
+}
+.ControllAccordion {
+  height: 200px;
+  width: 100%;
+}
+
+.blacklist-content {
+  color: #664d03;
+  font-weight: bold;
+  width: 100%;
+  border: 1px solid #997404;
+  border-radius: 10px;
+  background-color: #fff8e1;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.DashBoardAlert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 12em;
+  height: 6em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff8e1;
+  color: #997404;
+  font-weight: bold;
+  border: 2px solid #997404;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.DashBoardAlert-shell {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff8e1a0;
+  width: 100cqmax;
+  height: 100cqmax;
+  z-index: 10;
+}
+
+.h3_DEF {
+  display: none;
+}
+.dataNumber {
+  width: 4px;
+  background-color: rgb(255, 79, 79);
+  color: #ffffff;
+  padding: 2px;
+  margin-left: 5px;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.staff-content p {
+  margin-bottom: 25px;
+}
+
+#orderTh th {
+  cursor: pointer;
+}
+
+#orderTh .arrup::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  transform: translateY(5px);
+  background-image: url("/public/images/arrup.png");
+  background-repeat: no-repeat;
+}
+#orderTh .arrdown::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  transform: translateY(5px);
+  background-image: url("/public/images/arrdown.png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 997px) {
+  .aside {
+    min-height: 120px;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 20px auto;
+  }
+
+  .aside-img-button {
+    display: none;
+  }
+
+  .aside .aside-main {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0;
+    border: none;
+  }
+
+  .aside-input {
+    display: none;
+  }
+
+  .aside-main div {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    border-bottom: 0px solid #ffc107;
+  }
+
+  .aside-main div h5 {
+    border-left: 6px solid #664d03;
+  }
+
+  .aside-title {
+    font-size: 18px;
+    line-height: 0.5;
+  }
+
+  .aside span {
+    font-size: 14px;
+    line-height: 0.5;
+    padding: 4px;
+  }
+
+  .aside span::before {
+    width: 14px;
+    height: 14px;
+  }
+
+  .dashOrder {
+    min-height: auto;
+    gap: 0px;
+  }
+
+  .dashOrder > h3 {
+    margin: 0;
+    line-height: 0.5;
+  }
+
+  #orderTh {
+    display: none;
+  }
+
+  #orderTh_RWD {
+    display: contents;
+  }
+
+  .orderThead,
+  .orderTbody {
+    width: 100%;
+    color: #664d03;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 5;
+    text-align: center;
+  }
+
+  .orderBtn {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+
+  .DashBoardAlert {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 12em;
+    height: 6em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff8e1;
+    color: #997404;
+    font-weight: bold;
+    border: 2px solid #997404;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .h3_RWD {
+    display: none;
+  }
+
+  .h3_DEF {
+    display: block;
+    color: #eaac00;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-left: auto;
+  }
+  .ControllAccordion {
+    height: 350px;
+    width: 100%;
+  }
+}
